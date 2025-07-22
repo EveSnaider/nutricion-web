@@ -1,0 +1,111 @@
+/* ==== RESET GENERAL ==== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ==== ESTILOS GENERALES ==== */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  color: #333;
+  padding: 20px;
+}
+
+h1, h2, h3 {
+  color: #007b5e;
+  margin-bottom: 10px;
+}
+
+/* ==== CABECERA ==== */
+header {
+  background-color: #cce5df;
+  padding: 30px 20px;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* ==== NAVEGACIÓN ==== */
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  gap: 12px;
+  padding: 15px;
+  background-color: #eaf5f0;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #007b5e;
+  font-weight: bold;
+  padding: 10px 18px;
+  background-color: #d4f3ea;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #b2e2d5;
+}
+
+/* ==== CONTENIDO PRINCIPAL ==== */
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+section, div {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* ==== IMÁGENES ==== */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* ==== PIE DE PÁGINA ==== */
+footer {
+  background-color: #cce5df;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  margin-top: 40px;
+}
+
+/* ==== LISTAS ==== */
+ul {
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+
+/* ==== TEXTO ADICIONAL ==== */
+p {
+  margin-bottom: 12px;
+}
+
+/* ==== RESPONSIVE ==== */
+@media (min-width: 768px) {
+  main {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  main > div, main > section {
+    flex: 1 1 48%;
+  }
+}
