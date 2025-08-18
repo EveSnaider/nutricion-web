@@ -1,16 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-header img {
-  max-width: 500px;
-  height: auto;
-  display: block;
-  margin: 0 auto 15px;
-}
-
+/* Compilado desde styles.scss */
 body {
   font-family: "Segoe UI", sans-serif;
   background-color: #f8f9fa;
@@ -18,39 +6,9 @@ body {
   padding: 20px;
   overflow-x: hidden;
 }
-
 h1, h2, h3 {
   color: #0dbd94;
   margin-bottom: 12px;
-}
-
-nav ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  list-style: none;
-  gap: 10px;
-  background-color: rgb(136.7142857143, 237.2857142857, 210.4285714286);
-  border-radius: 10px;
-  padding: 12px;
-}
-nav ul li a {
-  text-decoration: none;
-  color: #0dbd94;
-  font-weight: bold;
-  background-color: rgb(157.6930693069, 248.3069306931, 227.198019802);
-  padding: 8px 14px;
-  border-radius: 6px;
-  transition: 0.3s;
-}
-nav ul li a:hover {
-  background-color: #30e0b1;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
 }
 main section, main div {
   background: white;
@@ -59,30 +17,6 @@ main section, main div {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
   animation: aparecer 0.8s ease-out both;
 }
-main img {
-  width: 50%;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 12px;
-  object-fit: cover;
-}
-
-p {
-  margin-bottom: 10px;
-}
-
-ul {
-  padding-left: 20px;
-  margin-bottom: 10px;
-}
-
-footer {
-  background-color: rgb(86.1163366337, 243.3836633663, 206.7475247525);
-  padding: 16px;
-  text-align: center;
-  border-radius: 8px;
-}
-
 .boton-contacto {
   background: #0dbd94;
   color: white;
@@ -94,35 +28,19 @@ footer {
   animation: flotar 2s ease-in-out infinite alternate;
 }
 .boton-contacto:hover {
-  background: rgb(8.0767326733, 117.4232673267, 91.9504950495);
+  background: #066a52;
 }
-
 @keyframes flotar {
-  0% {
-    transform: translateY(0px);
-  }
-  100% {
-    transform: translateY(-6px);
-  }
+  0% { transform: translateY(0px); }
+  100% { transform: translateY(-6px); }
 }
 @keyframes aparecer {
-  from {
-    opacity: 0;
-    transform: translateY(25px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(25px); }
+  to { opacity: 1; transform: translateY(0); }
 }
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-  }
-  main section, main div {
-    width: 100%;
-  }
+@media (max-width: 480px) {
+  h1 { font-size: 1.5rem; }
 }
-
-/*# sourceMappingURL=style.css.map */
+@media (min-width: 1200px) {
+  main { max-width: 1200px; margin: 0 auto; }
+}

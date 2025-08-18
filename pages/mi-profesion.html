@@ -1,34 +1,46 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mi profesión | Evelyn Snaider</title>
-  <link rel="stylesheet" href="../css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mi experiencia como licenciada en nutrición, estudios y trabajos realizados.">
+  <meta name="keywords" content="nutrición, profesión, estudios, experiencia">
+  <meta name="author" content="Evelyn Snaider">
+  <title>Mi Profesión | Evelyn Snaider</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-
-  <nav>
-    <ul>
-      <li><a href="../index.html">Inicio</a></li>
-      <li><a href="mi-profesion.html">Mi profesión</a></li>
-      <li><a href="beneficios-de-la-nutricion.html">Beneficios</a></li>
-      <li><a href="tips-nutricionales.html">Tips</a></li>
-      <li><a href="recetas-saludables.html">Recetas</a></li>
-    </ul>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html">Inicio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="mi-profesion.html">Mi profesión</a></li>
+          <li class="nav-item"><a class="nav-link" href="beneficios-de-la-nutricion.html">Beneficios</a></li>
+          <li class="nav-item"><a class="nav-link" href="tips-nutricionales.html">Tips</a></li>
+          <li class="nav-item"><a class="nav-link" href="recetas-saludables.html">Recetas</a></li>
+        </ul>
+      </div>
+    </div>
   </nav>
 
-  <header>
-    <img src="../img/Logos-04.png" alt="Logotipo de nutrición" />
+  <header class="text-center">
     <h1>Licenciatura en Nutrición</h1>
   </header>
 
-  <main>
-    <section>
-      <p>Empecé la carrera en 2018. Como toda nueva experiencia, al principio da miedo e incertidumbre. Tenía dudas sobre si realmente era lo que quería hacer el resto de mi vida. Pero con los años me fui enamorando de esta profesión...</p>
+  <main class="container">
+    <section class="mb-4">
+      <p>Empecé la carrera en 2018. Como toda nueva experiencia, al principio da miedo e incertidumbre. 
+      Tenía dudas sobre si realmente era lo que quería hacer el resto de mi vida. 
+      Pero con los años me fui enamorando de esta profesión...</p>
 
       <h2>¿De qué se trata mi carrera?</h2>
-      <p>Enseñar a las personas a crear hábitos saludables y mejorar su alimentación. Escuchar, acompañar y motivar durante el proceso.</p>
+      <p>Enseñar a las personas a crear hábitos saludables y mejorar su alimentación. 
+      Escuchar, acompañar y motivar durante el proceso.</p>
 
       <h2>Otros estudios</h2>
       <ul>
@@ -45,11 +57,11 @@
     </section>
   </main>
 
- <footer>
+  <footer class="text-center mt-4 p-3 bg-light rounded">
     <h3>Comentame tu experiencia y dejame tus dudas</h3>
-    <button class="boton-contacto">
-      <a href="https://wa.me/5493624218664" target="_blank">Escribime por WhatsApp</a>
-    </button>
+    <a href="https://wa.me/5493624218664" target="_blank" class="boton-contacto">Escribime por WhatsApp</a>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
